@@ -1,0 +1,9 @@
+.ai-harness/
+.codegraph/
+.cursor/
+.mcp.json
+AGENTS.md
+.env*
+README.md
+BUILD-NOTES.md
+START_HERE.txt
