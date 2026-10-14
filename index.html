@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17233c">
+  <meta name="description" content="NIS Lab — персональная подготовка к поступлению в 7 класс НИШ.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23ff806b'/%3E%3Ctext x='16' y='47' font-family='Arial' font-weight='bold' font-size='43' fill='%2317233c'%3EN%3C/text%3E%3C/svg%3E">
+  <title>NIS Lab — подготовка с пониманием</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Основная навигация">
+      <button class="brand" data-route="home" aria-label="NIS Lab, на главную"><span class="brand-mark">N<span>✦</span></span><span class="brand-copy">NIS <strong>Lab</strong><small>Личная учебная студия</small></span></button>
+      <div class="sidebar-label">ПОДГОТОВКА</div>
+      <nav class="main-nav">
+        <button class="nav-item active" data-route="home"><span class="nav-icon">⌂</span>Главная</button>
+        <button class="nav-item" data-route="plan"><span class="nav-icon">▦</span>Мой план</button>
+        <button class="nav-item" data-route="practice"><span class="nav-icon">✎</span>Тренировка</button>
+        <button class="nav-item" data-route="mock"><span class="nav-icon">◷</span>Пробник</button>
+        <button class="nav-item" data-route="mistakes"><span class="nav-icon">↻</span>Ошибки</button>
+      </nav>
+      <div class="sidebar-label second-label">ПОМОЩЬ</div>
+      <nav class="main-nav">
+        <button class="nav-item" data-route="resources"><span class="nav-icon">◇</span>Материалы</button>
+        <a class="nav-item" href="developer.html" style="text-decoration:none"><span class="nav-icon">⚒</span>Мастерская</a>
+        <button class="nav-item" data-route="parents"><span class="nav-icon">▤</span>Для родителей</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="sidebar-tip"><span class="tip-spark">✦</span><strong>Маленькие шаги каждый день</strong><p>Даже 20 минут практики помогают заметить и закрыть пробелы.</p></div><span class="sidebar-foot">Создано для школьников Казахстана</span></div>
+    </aside>
+    <div class="main-column">
+      <header class="topbar"><button class="mobile-menu" id="mobile-menu" aria-label="Открыть меню">☰</button><div class="topbar-left"><span class="eyebrow">ПОДГОТОВКА К 7 КЛАССУ НИШ</span><span class="topbar-divider"></span><span id="topbar-date"></span></div><div class="topbar-actions"><label class="sr-only" for="question-language">Язык заданий</label><select id="question-language" aria-label="Язык заданий" style="max-width:110px;border:1px solid #dce2ea;border-radius:8px;padding:7px"><option value="ru">Русский</option><option value="kk">Қазақша</option><option value="en">English</option></select><span class="local-pill"><span></span>Прогресс на этом устройстве</span><button class="profile-button" id="profile-button"><span class="avatar" id="profile-avatar">У</span><span id="profile-name">Ученик</span><span class="chevron">⌄</span></button></div></header>
+      <main id="app" tabindex="-1"></main>
+    </div>
+  </div>
+  <div class="scrim" id="scrim" hidden></div>
+  <div class="modal-layer" id="modal-layer" hidden></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="questions.js"></script>
+  <script src="bank-store.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

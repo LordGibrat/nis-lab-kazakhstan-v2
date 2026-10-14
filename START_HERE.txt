@@ -1,0 +1,15 @@
+NIS Lab — developer workshop
+
+1. Extract this ZIP into one folder.
+2. Recommended: run `python -m http.server 8000` from that folder, then open http://localhost:8000/developer.html in Chrome or Edge. This keeps the workshop and student app on the same storage origin.
+3. Alternatively open developer.html directly, but file:// storage sharing differs by browser. If edits do not appear in index.html, use the local server above.
+4. Open the Sources tab. Download starter-bank.json or choose that included file in “Импорт JSON”. It contains 15 mathematics concepts with Russian, Kazakh and English variants, all draft/unreviewed.
+5. Select the desired question language, inspect a question and choose “Редактировать”. Check the original/translation, answer and license; tick the review checkbox and save to enable practice.
+6. Open index.html or “К тренировкам”. Reload the student tab after bank edits. The language selector shows translations where available and otherwise the original text.
+7. Regularly export your question bank. It includes custom questions, translations and topic targets, not student profiles/history. Export student history separately on the Parents page.
+
+Import never overwrites duplicate question IDs. Restore full backups in a clean browser profile/origin and re-review imported questions. Keep the original profile intact if it contains important student progress. Do not delete browser data to resolve an import error.
+
+This version is browser-local, not a protected online admin or synchronized database. Browser storage must be permitted for persistence. No changes were pushed to GitHub or deployed.
+
+Read README.md for details and BUILD-NOTES.md for verification. Real-browser visual QA was blocked in the build environment, so no screenshot/browser pass is claimed. Automated schema, translation and mocked integration checks passed.
