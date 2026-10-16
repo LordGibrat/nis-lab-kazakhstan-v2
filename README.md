@@ -1,8 +1,10 @@
-# NIS Lab
+# NIS Lab · Workshop edition
+
+This version adds a local question-bank workshop with draft review, translations, and import/export. The student practice experience remains available alongside it.
 
 NIS Lab is a Russian-language browser practice platform for students in Kazakhstan preparing for the entrance selection process to the 7th grade of NIS schools. It is an independent portfolio project maintained by [@LordGibrat](https://github.com/LordGibrat).
 
-**[Open the live platform →](https://lordgibrat.github.io/nis-lab-kazakhstan/)**
+**[Open the original live platform →](https://lordgibrat.github.io/nis-lab-kazakhstan/)** · [Run this version locally](#developer-workshop-local-first)
 
 ![NIS Lab home page](preview.png)
 
